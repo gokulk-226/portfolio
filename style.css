@@ -1,0 +1,177 @@
+/* Font & base styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  line-height: 1.8;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 150px;              /* Increased width */
+  height: 100%;
+  background-color: #222;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar-img {
+  width: 100%;
+}
+
+.sidebar-link {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.sidebar-link i {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 300px;        /* Matches sidebar width */
+  padding: 50px;
+  max-width: 1000px;
+}
+
+/* Section layout */
+.section {
+  padding: 70px 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Text Styles */
+.title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 32px;
+}
+
+h2, h3 {
+  color: #d5d5d5;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  width: 200px;
+  margin: 24px auto;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Profile image */
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Skill bars */
+.skill {
+  margin-bottom: 24px;
+}
+
+.skill p {
+  margin: 4px 0;
+}
+
+.bar {
+  background-color: #fff;
+  height: 24px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.fill {
+  background-color: #333;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  padding: 32px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 64px;
+}
+
+.footer i {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.footer i:hover {
+  color: #fff;
+}
+
+/* Links */
+a {
+  color: #4dd0e1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 24px;
+  }
+
+  .section {
+    padding: 48px 16px;
+  }
+}
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4dd0e1;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
