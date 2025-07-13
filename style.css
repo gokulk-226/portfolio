@@ -89,11 +89,20 @@ ul {
 
 /* Profile image */
 .profile-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+  display: block;
+  margin: 20px auto;             /* Center the image */
+  width: 350px;                  /* Fixed width */
+  height: 350px;
+  object-fit: cover;             /* Crops inside box */
+  border-radius: 5%;            /* Makes it circular */
+  border: 3px solid #4dd0e1;     /* Cyan border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  transition: transform 0.3s ease;
 }
 
+.profile-img:hover {
+  transform: scale(1.05);        /* Slight zoom on hover */
+}
 /* Skill bars */
 .skill {
   margin-bottom: 24px;
